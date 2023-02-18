@@ -4,24 +4,14 @@
  *
  * Return: Always 0 (success)
  */
-
 int main(void)
 {
-	char c;
+	char ch;
 
-	char d;
-
-	c = 'a';
-	d = 'A';
-	while
-		(c <= 'z') {
-			putchar(c);
-			c++;
-		}
-	while
-		(d <= 'Z') {
-			putchar(c);
-			d++;
-		}
+	for (ch = 'a'; ch <= 'z'; ch++)
+			putchar(ch);
+	for (ch = 'A'; ch <= 'Z'; ch++)
+			putchar(ch);		
 	putchar('\n');
 	return (0);
+}
