@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main Entry level
+ * main - Entry level
  *
  * Return: 0
  */
