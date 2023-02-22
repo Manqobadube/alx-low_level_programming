@@ -1,27 +1,12 @@
 #include "main.h"
 
 /**
- * print_sing - print the sign of a number
- * @n: the number of the sign to be printed
- * Return: 1 if number is greater than zero
- * 0 of number is zero
- * -1 if the number is less
+ * _isalpha - ckeck for lower case
+ * @c: character to check
+ * Return: 0 to 1
  */
-int print_sign(int n)
+
+int _isalpha(int c)
 {
-	if (n > 0)
-	{
-		_putchar('+');
-		return (1);
-	}
-	else if (n == 0)
-	{
-		_putchar('0');
-		return (0);
-	}
-	else
-	{
-		_putchar('-');
-		return (-1);
-	}
+	return ((c >= 97 && c <= 122) || (c >= 65 && c <= 90));
 }
