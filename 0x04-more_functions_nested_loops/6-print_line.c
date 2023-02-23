@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
  * print_line - straight line
  * @n: input
@@ -12,11 +12,14 @@ void print_line(int n)
 	{
 	_putchar('\n');
 	}
+
 	else
 	{
 	for (co = 1; co <= n; co++)
 	{
 	_putchar('_');
 	}
-}
+	_putchar('\n');
+	}
 
+}
