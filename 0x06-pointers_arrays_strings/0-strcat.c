@@ -1,19 +1,29 @@
 #include "main.h"
 /**
- * strcat - string
+ * _strcat - string
  * @dest: pointer
  * @src: source
  * Return: pointer to the destination string @dest
  */
-char *strcat(char *dest, const char *src)
+char *_strcat(char *dest, char *src)
 {
-	int index = 0, dest_len = 0;
+	int i;
+	int j;
 
-	while (dest[index++])
-		dest_len++;
+	i = 0;
 
-	for (index = 0; src[index]; index++)
-		dest[dest_len++] = src[index];
+	while (dest[i] != '\0')
+	{
 
+		i++;
+	}
+	j = 0;
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+	dest[i] = '\0';
 	return (dest);
 }
